@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Setup environment -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/static/css/main1.css">
+
+        <!-- Set up titles -->
+
+        <title>Yelp Recommendation</title>
+    </head>
+    <body>
+
+          <div style="background-color:#7bceeb;">
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+            <v:fill type="frame" src="http://urbansquaredrealty.com/wp-content/uploads/2012/11/URBAN-squared-realty-background-512-501-3785-midtown-soco.v4jpg.jpg" color="#7bceeb" />
+            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                <![endif]-->
+            <table height="100%" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+            <td valign="top" align="left" background="http://urbansquaredrealty.com/wp-content/uploads/2012/11/URBAN-squared-realty-background-512-501-3785-midtown-soco.v4jpg.jpg" style="background-repeat:no-repeat; background-size:cover;">
+
+
+
+        <img src= "http://www.chapter3travels.com/wp-content/uploads/2016/09/yelp-icon.jpg" alt= "Yelp LOGO" width =200 height=200>
+
+        <h1><center><font style ="font-family:verdana;"> Yelp Recommender  </center></h1>
+
+
+
+
+
+
+<!-- Head -->
+    <section id="zero" class="wrapper style1">
+        <header class="align-center">
+            <h2>A cute Guinea Pig is on the way.</h2>
+
+
+            <p> Answer a few questions to get Guinea Pig to know you.</p>
+            <img src=/static/img/pig.gif width="250" height="250"/>
+             <!--img src="/static/img/pig.gif?<?php echo time();?>" /-->
+
+            <ul class="actions">
+                <li><a href="#city" class="button scrolly">Start</a></li>
+            </ul>
+        </header>
+    </section>
+<form action = '/user_detail' method="post">
+<!-- City -->
+    <section id="city" class="wrapper style2">
+        <header class="align-center">
+            <h2>Which city are you currently living in?</h2>
+            <p> Select the cities</p>
+        </header>
+        <ul class="actions align-center">
+            <li><input type="checkbox" name="city" value='NYC' id="cd11" />
+            <label for="cd11"><img src=/static/img/nyc.jpg width = "150" height = "150"/></label>
+            <label for="cd11"><p>New York</p></label>
+            </li>
+            <li><input type="checkbox" name="city" value='Miami' id="cb12" />
+            <label for="cb12"><img src=/static/img/miami.jpg width = "150" height = "150"/></label>
+            <label for="cb12"><p>Miami</p></label>
+            </li>
+            <li><input type="checkbox" name="city" value='Seattle' id="cb13" />
+            <label for="cb13"><img src=/static/img/seattle.jpg width = "150" height = "150"/></label>
+            <label for="cb13"><p>Seattle</p></label>
+            </li>
+        </ul>
+        <ul class="actions align-center">
+            <li><input type="checkbox" name="city" value='Las' id="cd14" />
+            <label for="cd14"><img src=/static/img/lasvegas.jpg width = "150" height = "150"/></label>
+            <label for="cd14"><p>Las Vegas</p></label>
+            </li>
+            <li><input type="checkbox" name="city" value='San' id="cb15" />
+            <label for="cb15"><img src=/static/img/sfan.jpg width = "150" height = "150"/></label>
+            <label for="cb15"><p>San Fran</p></label>
+            </li>
+            <li><input type="checkbox" name="city" value='Bos' id="cb16" />
+            <label for="cb16"><img src=/static/img/boston.jpg width = "150" height = "150"/></label>
+            <label for="cb16"><p>Boston</p></label>
+            </li>
+        </ul>
+        <ul class="actions align-center">
+            <li><a href="#one" class="button scrolly">Next</a></li>
+        </ul>
+    </section>
+
+<!--Food -->
+    <section id="one" class="wrapper style5">
+        <header class="align-center">
+            <h2>What kind of food do you want to try?</h2>
+
+            </header>
+
+            <ul class="actions align-center">
+              <li><input type="checkbox" name="food" value='fast_food' id="cb1" />
+                <label for="cb1"><img src=/static/img/fast_food.jpg width = "150" height = "150"/></label>
+                <label for="cb1"><p>Fast Food</p></label>
+
+              </li>
+              <li><input type="checkbox" name="food" value='american' id="cb2" />
+                <label for="cb2"><img src=/static/img/americanfood.jpg width = "150" height = "150"/></label>
+                <label for="cb2"><p>American</p></label>
+                <!-- <p>Museum</p> -->
+              </li>
+              <li><input type="checkbox" name="food" value='chinese' id="cb3" />
+                <label for="cb3"><img src=/static/img/chinesefood.jpg width = "150" height = "150"/></label>
+                <label for="cb3"><p>Chinese</p></label>
+
+              </li>
+            </ul>
+            <ul class="actions align-center">
+              <li><input type="checkbox" name="food" value='japanese' id="cb4" />
+                <label for="cb4"><img src=/static/img/japanesefood.jpg width = "150" height = "150"/></label>
+                <label for="cb4"><p>Japanese</p></label>
+
+              </li>
+              <li><input type="checkbox" name="food" value='others' id="cb5" />
+                <label for="cb5"><img src=/static/img/other_food.jpg width = "150" height = "150"/></label>
+                <label for="cb5"><p>Other</p></label>
+
+              </li>
+            </ul>
+            <ul class="actions align-center">
+                <li><a href="#two" class="button scrolly">Next</a></li>
+            </ul>
+
+    </section>
+
+<!-- Important options -->
+    <section id="two" class="wrapper style4">
+        <header class="align-center">
+            <h2>Are any of these options important to you?</h2>
+        </header>
+        <ul class="actions align-center">
+              <li><input type="checkbox" name="option" value='romantic' id="cb21" />
+                <label for="cb21"><img src=/static/img/subway.jpg width = "150" height = "150"/></label>
+                <label for="cb21"><p>Romantic</p></label>
+
+              </li>
+              <li><input type="checkbox" name="option" value='open_24' id="cb22" />
+                <label for="cb22"><img src=/static/img/open_24.png width = "150" height = "150"/></label>
+                <label for="cb22"><p>Open 24 Hours</p></label>
+
+              </li>
+
+              <li><input type="checkbox" name="option" value='noise_level' id="cb24" />
+                <label for="cb24"><img src=/static/img/group.jpg width = "150" height = "150"/></label>
+                <label for="cb24"><p>Good For Group</p></label>
+              </li>
+
+        </ul>
+        <ul class="actions align-center">
+
+              <li><input type="checkbox" name="option" value='Parking' id="cb25" />
+                <label for="cb25"><img src=/static/img/parking.jpg width = "150" height = "150"/></label>
+                <label for="cb25"><p>Parking avaliable</p></label>
+              </li>
+              <li><input type="checkbox" name="option" value='romantic' id="cb26" />
+                <label for="cb26"><img src=/static/img/dating.jpg width = "150" height = "150"/></label>
+                <label for="cb26"><p>Good for Dating</p></label>
+              </li>
+
+        </ul>
+        <ul class="actions align-center">
+            <li><a  href="#three" class="button scrolly">Next</a></li>
+        </ul>
+    </section>
+
+<!-- Special -->
+    <section id="three" class="wrapper style5">
+        <header class="align-center">
+            <h2>Have a restaurant name?</h2>
+            <p> You can also input restaurant name here.</p>
+            <p> Like: "KFC" or "BurgerKing" </p>
+        </header>
+        <div class="inner">
+            <!-- <p> You can also input restaurant name here.</p> -->
+            <textarea name="specialInput" id="specialInput" placeholder='Like: "KFC" or "BurgerKing"' rows="1"></textarea>
+            <p>&nbsp;</p>
+        </div>
+        <ul class="actions align-center">
+            <li><a href="#four" class="button scrolly">Next</a></li>
+        </ul>
+    </section>
+
+
+     <section id="four" class="wrapper style7">
+        <header class="align-center">
+            <h2>Have an account number?</h2>
+            <p> You can also input your account here.</p>
+            <p> Like: ""wHg1YkCzdZq9WBJOTRgxHQ" </p>
+        </header>
+        <div class="inner">
+            <!-- <p> You can also input your account here.</p> -->
+            <textarea name="account" id="account" placeholder='Like: "wHg1YkCzdZq9WBJOTRgxHQ"' rows="1"></textarea>
+            <p>&nbsp;</p>
+        </div>
+        <ul class="actions align-center">
+            <li><a href="#final" class="button scrolly">Last step...</a></li>
+        </ul>
+    </section>
+
+<!-- Deploy -->
+<section id="final" class="wrapper">
+    <header class="align-center">
+        <h2>Everything is ready.</h2>
+        <p> We are very happy to give you recommandations.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <ul class="actions align-center">
+            <input type="submit" class="btn btn-lg btn-success" name="my-form" value="Apply">
+            <!-- <button type="submit" name="submit" value="submit">Submit</button> -->
+            <!-- <li><a href="results" class="button big icon fa-search">Panda GoGoGo!</a></li> -->
+        </ul>
+        <p>&nbsp;</p>
+    </header>
+
+</form>
+
+
+
+    </body>
+</html>
